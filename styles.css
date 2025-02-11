@@ -1,24 +1,182 @@
+.size {
+    width: 150px;
+    height: auto;   
+    float: left;
+    margin-left: 0px 0px 0px 0px;
+}
+
 
 
 .header {
-    display: flex;
-    background: 
-        linear-gradient(5deg, #7B3F00 25%, transparent 25%, transparent 50%, #7B3F00 50%, #7B3F00 75%, transparent 75%, transparent 100%),
-        linear-gradient(135deg, #8B4513 25%, transparent 25%, transparent 50%, #8B4513 50%, #8B4513 75%, transparent 75%, transparent 100%);
-    background-size: 40px 40px;
-    height: 130px; /* Adjust the height as needed */
-    color: rgb(187, 237, 80); /* Text color inside the header */
-    text-align: center;
-    line-height: 150px; /* Vertically center text */
-    font-size: 15px;
-    font-family: Arial, sans-serif;
+    text-align: right; /* Center the header content */
+    padding: 20px; /* Add some padding around the header */
+    background-color: #f0f0f0; /* Example background color */
 }
 
-.size {
-    width: 100px;
-    height: auto;   
+.header-title {
+    font-size: 2em; /* Larger font size for the main title */
+    margin-bottom: 5px; /* Add a little space below the title */
+   
+}
+
+.header-subtitle {
+    font-size: 1.2em; /* Slightly smaller font size for the subtitle */
+    font-style: italic; /* Make the subtitle italic */
+    color: #555; /* Darker gray color for the subtitle */
     float: left;
-    margin-left: 0px 0px 0px 30px;
 }
 
 
+body {
+    margin: 0; /* Remove default body margins */
+}
+
+.images {
+    display: flex;
+    justify-content: space-around; /* Distribute space evenly */
+    width: 100%; /* Make the container take full width */
+    padding: 20px;
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.images img {
+    /* Calculate width based on number of images and desired spacing */
+    width: calc(33.33% - 40px); /* 3 images - (margin * 2 * number of images) */
+    height: auto;
+    border: 5px solid #ccc;
+    margin: 20px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    align-items: right;
+}
+
+.images img:hover {
+    transform: scale(1.05);
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+}
+/* Media query for smaller screens, if needed */
+@media (max-width: 768px) {
+    .images {
+        flex-direction: column; /* Stack images vertically on smaller screens */
+        align-items: center; /* Center horizontally */
+    }
+    .images img {
+        width: calc(100% - 40px); /* Full width minus margin on smaller screens */
+        margin: 20px 0; /* Top and bottom margin only */
+    }
+}
+
+body {
+    margin: 0; /* Remove default body margins */
+}
+
+.header {
+    display: flex; /* Enable flexbox for header layout */
+    justify-content: space-between; /* Distribute space between title and nav */
+    align-items: center; /* Vertically align items */
+    padding: 20px;
+    background-color: #D2B48C;
+}
+
+.header-title {
+    font-size: 2em;
+    margin: 0; /* Remove default h1 margins */
+}
+
+.header-subtitle {
+    font-size: 1.2em;
+    font-style: italic;
+    color: #555;
+    margin: 0; /* Remove default p margins */
+    
+}
+
+.links ul {
+    list-style: none; /* Remove bullet points */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Arrange list items horizontally */
+}
+
+.links li {
+    margin-left: 20px; /* Add space between list items */
+}
+
+.links a {
+    text-decoration: none; /* Remove underlines from links */
+    color: #333; /* Dark gray link color */
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.links a:hover {
+    background-color: #ddd; /* Light gray background on hover */
+    color: #000;
+}
+
+.button:hover {
+    background-color: #d51633;
+    transform: scale(1.05);
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+    color: white;
+
+    
+}
+
+.button { 
+    background-color: #90EE90; /* Light green background */ 
+    border: none; /* Remove borders */ 
+    color: black; /* White text */ 
+    padding: 15px 32px; /* Some padding */ 
+    text-align: center; /* Centered text */ 
+    text-decoration: none; /* Remove underline */ 
+    display: inline-block; /* Inline-block element */ 
+    font-size: 16px; /* Increase font size */ 
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+     cursor: pointer; /* Pointer/hand icon */
+
+     }
+
+     .email-button:hover {
+    background-color: #90EE90;
+    transform: scale(1.05);
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+    color: white;
+
+     }
+
+     .email-button {
+        text-align: right;
+        background-color: #d51633; /* Light green background */ 
+        border: none; /* Remove borders */ 
+        color: black; /* White text */ 
+        padding: 15px 32px; /* Some padding */ 
+        text-align: center; /* Centered text */ 
+        text-decoration: none; /* Remove underline */ 
+        display: inline-block; /* Inline-block element */ 
+        font-size: 16px; /* Increase font size */ 
+        transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+         cursor: pointer; /* Pointer/hand icon */
+
+     }
+
+     .container {
+        display: flex;
+        justify-content: space-around;
+        border-radius: 10px;
+        align-items: center;        
+       
+     }
+
+     footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 1rem 0;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+    }
