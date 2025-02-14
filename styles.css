@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #size {
     width: 150px;
     height: auto;   
@@ -27,6 +28,37 @@
 }
 
 
+=======
+.size {
+    width: 150px;
+    height: auto;   
+    float: left;
+    margin-left: 0px 0px 0px 0px;
+}
+
+
+
+.header {
+    text-align: right; /* Center the header content */
+    padding: 20px; /* Add some padding around the header */
+    background-color: #f0f0f0; /* Example background color */
+}
+
+.header-title {
+    font-size: 2em; /* Larger font size for the main title */
+    margin-bottom: 5px; /* Add a little space below the title */
+   
+}
+
+.header-subtitle {
+    font-size: 1.2em; /* Slightly smaller font size for the subtitle */
+    font-style: italic; /* Make the subtitle italic */
+    color: #555; /* Darker gray color for the subtitle */
+    float: left;
+}
+
+
+>>>>>>> 48dd2b96831a6f337086c3d44ec7786682bfdeba
 body {
     margin: 0; /* Remove default body margins */
 }
@@ -72,7 +104,11 @@ body {
     margin: 0; /* Remove default body margins */
 }
 
+<<<<<<< HEAD
 #header {
+=======
+.header {
+>>>>>>> 48dd2b96831a6f337086c3d44ec7786682bfdeba
     display: flex; /* Enable flexbox for header layout */
     justify-content: space-between; /* Distribute space between title and nav */
     align-items: center; /* Vertically align items */
@@ -152,7 +188,11 @@ body {
         text-align: right;
         background-color: #d51633; /* Light green background */ 
         border: none; /* Remove borders */ 
+<<<<<<< HEAD
         color: black black; /* White text */ 
+=======
+        color: black; /* White text */ 
+>>>>>>> 48dd2b96831a6f337086c3d44ec7786682bfdeba
         padding: 15px 32px; /* Some padding */ 
         text-align: center; /* Centered text */ 
         text-decoration: none; /* Remove underline */ 
@@ -163,7 +203,11 @@ body {
 
      }
 
+<<<<<<< HEAD
      #form {
+=======
+     .container {
+>>>>>>> 48dd2b96831a6f337086c3d44ec7786682bfdeba
         display: flex;
         justify-content: space-around;
         border-radius: 10px;
@@ -179,6 +223,7 @@ body {
         position: relative;
         bottom: 0;
         width: 100%;
+<<<<<<< HEAD
     }
 
     #video {
@@ -209,4 +254,6 @@ body {
         display: flex;
         justify-content: auto;
         padding: 20px;
+=======
+>>>>>>> 48dd2b96831a6f337086c3d44ec7786682bfdeba
     }
