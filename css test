@@ -1,0 +1,22 @@
+
+
+.header {
+    display: flex;
+    background: 
+        linear-gradient(5deg, #7B3F00 25%, transparent 25%, transparent 50%, #7B3F00 50%, #7B3F00 75%, transparent 75%, transparent 100%),
+        linear-gradient(135deg, #8B4513 25%, transparent 25%, transparent 50%, #8B4513 50%, #8B4513 75%, transparent 75%, transparent 100%);
+    background-size: 40px 40px;
+    height: 130px; /* Adjust the height as needed */
+    color: rgb(187, 237, 80); /* Text color inside the header */
+    text-align: center;
+    line-height: 150px; /* Vertically center text */
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+}
+
+.size {
+    width: 100px;
+    height: auto;   
+    float: left;
+    margin-left: 0px 0px 0px 30px;
+}
