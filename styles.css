@@ -1,10 +1,12 @@
-<<<<<<< HEAD
+
+
 #size {
     width: 150px;
     height: auto;   
     float: left;
-    margin-left: 0px 0px 0px 0px;
+    margin: 0px;
 }
+
 
 
 
@@ -27,13 +29,11 @@
     float: left;
 }
 
-
-=======
 .size {
     width: 150px;
     height: auto;   
     float: left;
-    margin-left: 0px 0px 0px 0px;
+    margin: 0px;
 }
 
 
@@ -55,12 +55,6 @@
     font-style: italic; /* Make the subtitle italic */
     color: #555; /* Darker gray color for the subtitle */
     float: left;
-}
-
-
->>>>>>> 48dd2b96831a6f337086c3d44ec7786682bfdeba
-body {
-    margin: 0; /* Remove default body margins */
 }
 
 .images {
