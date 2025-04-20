@@ -4,6 +4,12 @@ body {
     font-family: Arial, sans-serif;
 }
 
+/* Reusable Flexbox Class */
+.flex-center {
+    display: flex;
+    align-items: center;
+}
+
 /* Header */
 #header {
     display: flex;
@@ -23,7 +29,7 @@ body {
 }
 
 .size {
-    width: 50px; /* Adjust size as needed */
+    width: 100px;
     height: auto;
     margin-right: 10px;
 }
