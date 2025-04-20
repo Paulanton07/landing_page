@@ -1,253 +1,153 @@
-
-
-#size {
-    width: 150px;
-    height: auto;   
-    float: left;
-    margin: 0px;
+/* General Reset */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
 }
 
-
-
-
+/* Header */
 #header {
-    text-align: right; /* Center the header content */
-    padding: 20px; /* Add some padding around the header */
-    background-color: #f0f0f0; /* Example background color */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
 }
 
-.header-title {
-    font-size: 2em; /* Larger font size for the main title */
-    margin-bottom: 5px; /* Add a little space below the title */
-   
+#header .header-content {
+    display: flex;
+    align-items: center;
 }
 
-.header-subtitle {
-    font-size: 1.2em; /* Slightly smaller font size for the subtitle */
-    font-style: italic; /* Make the subtitle italic */
-    color: #555; /* Darker gray color for the subtitle */
-    float: left;
+#header .header-title, 
+#header .header-subtitle {
+    margin-left: 10px;
 }
 
 .size {
-    width: 150px;
-    height: auto;   
-    float: left;
-    margin: 0px;
-}
-
-
-
-.header {
-    text-align: right; /* Center the header content */
-    padding: 20px; /* Add some padding around the header */
-    background-color: #f0f0f0; /* Example background color */
-}
-
-.header-title {
-    font-size: 2em; /* Larger font size for the main title */
-    margin-bottom: 5px; /* Add a little space below the title */
-   
-}
-
-.header-subtitle {
-    font-size: 1.2em; /* Slightly smaller font size for the subtitle */
-    font-style: italic; /* Make the subtitle italic */
-    color: #555; /* Darker gray color for the subtitle */
-    float: left;
-}
-
-.images {
-    display: flex;
-    justify-content: space-around; /* Distribute space evenly */
-    width: 100%; /* Make the container take full width */
-    padding: 20px;
-    box-sizing: border-box; /* Include padding in width calculation */
-}
-
-.images img {
-    /* Calculate width based on number of images and desired spacing */
-    width: calc(33.33% - 40px); /* 3 images - (margin * 2 * number of images) */
+    width: 50px; /* Adjust size as needed */
     height: auto;
-    border: 5px solid #ccc;
-    margin: 20px;
-    box-sizing: border-box;
-    border-radius: 8px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease;
-    align-items: right;
+    margin-right: 10px;
 }
 
-.images img:hover {
-    transform: scale(1.05);
-    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
-}
-/* Media query for smaller screens, if needed */
-@media (max-width: 768px) {
-    .images {
-        flex-direction: column; /* Stack images vertically on smaller screens */
-        align-items: center; /* Center horizontally */
-    }
-    .images img {
-        width: calc(100% - 40px); /* Full width minus margin on smaller screens */
-        margin: 20px 0; /* Top and bottom margin only */
-    }
-}
-
-body {
-    margin: 0; /* Remove default body margins */
-}
-
-<<<<<<< HEAD
-#header {
-=======
-.header {
->>>>>>> 48dd2b96831a6f337086c3d44ec7786682bfdeba
-    display: flex; /* Enable flexbox for header layout */
-    justify-content: space-between; /* Distribute space between title and nav */
-    align-items: center; /* Vertically align items */
-    padding: 20px;
-    background-color: #D2B48C;
-}
-
-.header-title {
-    font-size: 2em;
-    margin: 0; /* Remove default h1 margins */
-}
-
-.header-subtitle {
-    font-size: 1.2em;
-    font-style: italic;
-    color: #555;
-    margin: 0; /* Remove default p margins */
-    
-}
-
+/* Navigation Links */
 .links ul {
-    list-style: none; /* Remove bullet points */
+    list-style: none;
     margin: 0;
     padding: 0;
-    display: flex; /* Arrange list items horizontally */
+    display: flex;
 }
 
 .links li {
-    margin-left: 20px; /* Add space between list items */
+    margin-left: 20px;
 }
 
 .links a {
-    text-decoration: none; /* Remove underlines from links */
-    color: #333; /* Dark gray link color */
+    text-decoration: none;
+    color: #333;
     padding: 5px 10px;
     border-radius: 5px;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .links a:hover {
-    background-color: #ddd; /* Light gray background on hover */
+    background-color: #ddd;
     color: #000;
 }
 
-.button:hover {
+/* Images Section */
+.images {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.images img {
+    width: calc(33.33% - 40px);
+    height: auto;
+    border: 5px solid #ccc;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.images img:hover {
+    transform: scale(1.05);
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Call-to-Action Buttons */
+.button, .email-button {
+    background-color: #90EE90;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+}
+
+.button:hover, .email-button:hover {
     background-color: #d51633;
     transform: scale(1.05);
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
     color: white;
-
-    
 }
 
-.button { 
-    background-color: #90EE90; /* Light green background */ 
-    border: none; /* Remove borders */ 
-    color: black; /* White text */ 
-    padding: 15px 32px; /* Some padding */ 
-    text-align: center; /* Centered text */ 
-    text-decoration: none; /* Remove underline */ 
-    display: inline-block; /* Inline-block element */ 
-    font-size: 16px; /* Increase font size */ 
-    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
-     cursor: pointer; /* Pointer/hand icon */
+/* Video Section */
+#video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
 
-     }
+/* Contact Form */
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
 
-     .email-button:hover {
-    background-color: #90EE90;
-    transform: scale(1.05);
-    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+#contact-form input[type="email"], #contact-form input[type="submit"] {
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+#contact-form input[type="submit"] {
+    background-color: #4CAF50;
     color: white;
+    cursor: pointer;
+    border: none;
+}
 
-     }
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
 
-     .email-button {
-        text-align: right;
-        background-color: #d51633; /* Light green background */ 
-        border: none; /* Remove borders */ 
-<<<<<<< HEAD
-        color: black black; /* White text */ 
-=======
-        color: black; /* White text */ 
->>>>>>> 48dd2b96831a6f337086c3d44ec7786682bfdeba
-        padding: 15px 32px; /* Some padding */ 
-        text-align: center; /* Centered text */ 
-        text-decoration: none; /* Remove underline */ 
-        display: inline-block; /* Inline-block element */ 
-        font-size: 16px; /* Increase font size */ 
-        transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
-         cursor: pointer; /* Pointer/hand icon */
-
-     }
-
-<<<<<<< HEAD
-     #form {
-=======
-     .container {
->>>>>>> 48dd2b96831a6f337086c3d44ec7786682bfdeba
-        display: flex;
-        justify-content: space-around;
-        border-radius: 10px;
-        align-items: center;        
-       
-     }
-
-     footer {
-        background-color: #333;
-        color: white;
-        text-align: center;
-        padding: 1rem 0;
-        position: relative;
-        bottom: 0;
-        width: 100%;
-<<<<<<< HEAD
-    }
-
-    #video {
-        display: flex;
-        justify-content: center;
+/* Media Query for Smaller Screens */
+@media (max-width: 768px) {
+    .images {
+        flex-direction: column;
         align-items: center;
-        padding: 40px;
-        
-
     }
 
-
-    input[type="submit"] {
-        background-color: #4CAF50;
-        color: white;
-        cursor: pointer;
-        border: none;
+    .images img {
+        width: calc(100% - 40px);
+        margin: 20px 0;
     }
-
-    input[type="email"], input[type="submit"] {
-        width: 50%;
-        padding: 10px;
-        margin-bottom: 10px;
-        box-sizing: border-box;
-    }
-
-    form input {
-        display: flex;
-        justify-content: auto;
-        padding: 20px;
-=======
->>>>>>> 48dd2b96831a6f337086c3d44ec7786682bfdeba
-    }
+}
