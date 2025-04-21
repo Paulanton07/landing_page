@@ -5,23 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Woodworx</title>  <link rel="stylesheet" href="styles.css">
 </head>
-<body>  <header id="header">  <div class="header-content">  <h1 class="header-title">Woodworx</h1>
+<body>
+    <header id="header">
+        <div class="header-content">
+            <h1 class="header-title">Woodworx</h1>
             <p class="header-subtitle">Sales</p>
-            <img class="size" src="logo.png" alt="Woodworx Logo"> </div>
+            <img class="size" src="logo.png" alt="Woodworx Logo" id="header-img">
+        </div>
+
+        <nav class="links" id="nav-bar">
+            <ul>
+                <li><a href="#page1" class="nav-link">Page 1</a></li>
+                <li><a href="#page2" class="nav-link">Page 2</a></li>
+                <li><a href="#page3" class="nav-link">Page 3</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <nav class="links">
-        <ul>
-            <li><a href="page1.html">Page 1</a></li>
-            <li><a href="page2.html">Page 2</a></li>
-            <li><a href="page3.html">Page 3</a></li>
-        </ul>
-    </nav>
+    <main>
+        <section class="images" id="page1">
+            <img src="planks (1).webp" alt="Planks Image 1">
+            <img src="planks (2).webp" alt="Beams and Planks">
+            <img src="planks (3).webp" alt="Shelves Selection">
+        </section>
 
-    <main>  <section class="images">  <img src="planks (1).webp" alt="Planks Image 1">  <img src="planks (2).webp" alt="Beams and Planks">  <img src="planks (3).webp" alt="Shelves Selection">  </section>
-
-        <section class="call-to-action">  <div class="container">
-                <a href="Heart Eco Pricelist.pdf" target="_blank" download class="button">Download PDF Price List</a>  <a href="mailto:orders@example.com?subject=Order%20Request&body=Hi%2C%0AI%20would%20like%20to%20place%20an%20order%20for%20the%20following%20items%3A%0A%0AItem%201%0AItem%202%0AItem%203%0A%0AThank%20you!" class="email-button">Send Order Email</a>  </div>
+        <section class="call-to-action" id="page2">
+            <div class="container">
+                <a href="Heart Eco Pricelist.pdf" target="_blank" download class="button">Download PDF Price List</a>
+                <a href="mailto:orders@example.com?subject=Order%20Request&body=Hi%2C%0AI%20would%20like%20to%20place%20an%20order%20for%20the%20following%20items%3A%0A%0AItem%201%0AItem%202%0AItem%203%0A%0AThank%20you!" class="email-button">Send Order Email</a>
+            </div>
         </section>
 
         <section id="video">
@@ -31,16 +43,19 @@
             </video>
         </section>
 
-        <section id="contact-form">  <form action="https://www.freecodecamp.com/email-submit" method="POST">
+        <section id="contact-form" id="page3">
+            <form action="https://www.freecodecamp.com/email-submit" method="POST" id="form">
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" placeholder="Enter your email address" required>
-                <input type="submit" value="Submit">
+                <input type="submit" value="Submit" id="submit">
             </form>
         </section>
     </main>
 
     <footer>
         <p>&copy; 2025 My Company</p>
-        <a href="https://www.pexels.com/video/high-speed-photography-of-colorful-ink-diffusion-in-water-9669111/" target="_blank">Video by cottonbro studio</a>  </footer>
+        <a href="https://www.pexels.com/video/high-speed-photography-of-colorful-ink-diffusion-in-water-9669111/" target="_blank">Video by cottonbro studio</a>
+    </footer>
 
-</body>  </html>
+</body>
+</html>
