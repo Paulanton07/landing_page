@@ -14,7 +14,7 @@ body {
 #header {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center; /* Center items horizontally */
     padding: 10px;
     position: fixed;
     top: 0;
@@ -22,22 +22,27 @@ body {
     width: 100%;
     background-color: white; /* Ensure the header is visible */
     z-index: 100; /* Ensure it stays on top of other content */
+    flex-direction: column; /* Stack header content and nav */
 }
 
 #header .header-content {
     display: flex;
     align-items: center;
+    justify-content: center; /* Center header content */
+    flex-direction: column;
 }
 
 #header .header-title, 
 #header .header-subtitle {
     margin-left: 10px;
+    text-align: center; /* Center titles */
 }
 
 .size {
-    width: 100px;
+    width: 150px; /* Increased by 50% */
     height: auto;
-    margin-right: 10px;
+    margin-right: 0; /* Remove right margin */
+    margin-bottom: 10px; /* Add some space below the logo */
 }
 
 /* Navigation Links */
@@ -149,6 +154,18 @@ footer {
     position: relative;
     bottom: 0;
     width: 100%;
+}
+
+/* More About Section */
+#more-about {
+    width: 300px;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    float: right;
+    text-align: center;
 }
 
 /* Media Query for Smaller Screens */
