@@ -29,6 +29,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 200px; /* added to contain the logo */
 }
 
 #header .header-title {
@@ -41,7 +42,7 @@ body {
 }
 
 .size {
-    width: 150px;
+    width: 100px; /* Reduced logo size */
     height: auto;
 }
 
