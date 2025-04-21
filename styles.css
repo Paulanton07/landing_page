@@ -22,32 +22,31 @@ body {
     width: 100%;
     background-color: white;
     z-index: 100;
-    height: 60px; /* Reduced header height by 40% */
 }
 
 #header .header-content {
     display: flex;
+    flex-direction: column;
     align-items: center;
 }
 
-#header .header-title,
-#header .header-subtitle {
-    margin-left: 10px;
+#header .header-title {
     text-align: center;
+}
+
+#header .header-subtitle {
+    margin-left: auto; /* Push "Sales" to the right */
+    margin-right: 10px;
 }
 
 .size {
     width: 150px;
     height: auto;
-    margin-right: 0;
-    margin-bottom: 10px;
 }
 
 /* Navigation Links */
 #nav-bar {
-    right: 0;
-    top: 0;
-    margin-right: 20px;
+    margin-left: 10px; /* Push nav to the left */
 }
 
 .links ul {
@@ -85,14 +84,13 @@ body {
 
 .images img {
     width: calc(33.33% - 40px);
-    height: auto;
+    height: 300px; /* Adjust this value to control the image height */
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
     border: 5px solid #ccc;
     margin: 20px;
     border-radius: 8px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease;
-    max-width: 200px; /* Adjust as needed */
-    max-height: 150px; /* Adjust as needed */
 }
 
 .images img:hover {
@@ -101,15 +99,7 @@ body {
 }
 
 /* Call-to-Action Buttons */
-.call-to-action .container {
-    display: flex;
-    justify-content: center; /* Center the buttons */
-    align-items: center;
-    flex-direction: column;
-}
-
-.button,
-.email-button {
+.button, .email-button {
     background-color: #90EE90;
     border: none;
     color: black;
@@ -120,11 +110,9 @@ body {
     font-size: 16px;
     transition: background-color 0.3s ease, transform 0.3s ease;
     cursor: pointer;
-    margin: 10px; /* Add some margin between buttons */
 }
 
-.button:hover,
-.email-button:hover {
+.button:hover, .email-button:hover {
     background-color: #d51633;
     transform: scale(1.05);
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
@@ -132,26 +120,11 @@ body {
 }
 
 /* Video Section */
-.main-content {
-    display: flex;
-    align-items: flex-start; /* Align items to the start */
-}
-
 #video {
-    flex: 1; /* Take up remaining space */
-    padding: 20px;
-}
-
-/* More About Section */
-#more-about {
-    width: 300px;
-    padding: 20px;
-    margin: 20px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-    text-align: center;
-    flex: 1; /* Take up remaining space */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
 }
 
 /* Contact Form */
@@ -162,8 +135,7 @@ body {
     padding: 20px;
 }
 
-#contact-form input[type="email"],
-#contact-form input[type="submit"] {
+#contact-form input[type="email"], #contact-form input[type="submit"] {
     width: 50%;
     padding: 10px;
     margin-bottom: 10px;
@@ -198,14 +170,5 @@ footer {
     .images img {
         width: calc(100% - 40px);
         margin: 20px 0;
-    }
-
-    .main-content {
-        flex-direction: column;
-    }
-
-    #more-about {
-        float: none;
-        width: 100%;
     }
 }
