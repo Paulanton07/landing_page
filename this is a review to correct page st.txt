@@ -1,0 +1,24 @@
+this is a review to correct page structure and placement of elements.
+
+1. the Page1, Page2, Page3 links should be renamed to reflect the name of connected element.
+page1 "download pdf price list"
+page2 "send order email"
+page3 "more-about"
+
+all three menu links should be placed to the right of the header/page.
+
+2. the logo should be 50% larger and the word "sales" must be placed to the left of the logo image.
+
+3. can you add functionality so that the page renders well on all size screens.
+
+4. the three images <section class="images" id="page1">
+renders too flat and too long on the page can you adjust image size so that they look good in proportion to the rest of elements.
+
+5. the <header> is static but takes up almost half of the page. can you reduce it by 40%.
+
+6. the download PDF Price List and Send Order Email buttons should be placed in the center of page.
+
+7. the video should be to the left of the page.
+
+8. the card "more-about" must have flex so when I add content it will fit, also the card is at the bottom by footer .
+place card in the <body> to the right of the video.
