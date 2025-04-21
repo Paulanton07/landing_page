@@ -14,7 +14,7 @@ body {
 #header {
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Distribute items horizontally */
+    justify-content: space-between;
     padding: 10px;
     position: fixed;
     top: 0;
@@ -22,6 +22,7 @@ body {
     width: 100%;
     background-color: white;
     z-index: 100;
+    height: 80px; /* Reduced header height */
 }
 
 #header .header-content {
@@ -35,8 +36,8 @@ body {
 }
 
 #header .header-subtitle {
-    margin-left: auto; /* Push "Sales" to the right */
-    margin-right: 10px;
+    margin-left: 10px; /* Push "Sales" to the left */
+    margin-right: auto;
 }
 
 .size {
@@ -46,7 +47,7 @@ body {
 
 /* Navigation Links */
 #nav-bar {
-    margin-left: 10px; /* Push nav to the left */
+    margin-right: 10px; /* Push nav to the right */
 }
 
 .links ul {
