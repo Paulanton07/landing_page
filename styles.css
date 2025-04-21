@@ -14,38 +14,42 @@ body {
 #header {
     display: flex;
     align-items: center;
-    justify-content: center; /* Center items horizontally */
+    justify-content: space-between; /* Distribute items horizontally */
     padding: 10px;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    background-color: white; /* Ensure the header is visible */
-    z-index: 100; /* Ensure it stays on top of other content */
-    flex-direction: column; /* Stack header content and nav */
+    background-color: white;
+    z-index: 100;
+    height: 60px; /* Reduced header height by 40% */
 }
 
 #header .header-content {
     display: flex;
     align-items: center;
-    justify-content: center; /* Center header content */
-    flex-direction: column;
 }
 
-#header .header-title, 
+#header .header-title,
 #header .header-subtitle {
     margin-left: 10px;
-    text-align: center; /* Center titles */
+    text-align: center;
 }
 
 .size {
-    width: 150px; /* Increased by 50% */
+    width: 150px;
     height: auto;
-    margin-right: 0; /* Remove right margin */
-    margin-bottom: 10px; /* Add some space below the logo */
+    margin-right: 0;
+    margin-bottom: 10px;
 }
 
 /* Navigation Links */
+#nav-bar {
+    right: 0;
+    top: 0;
+    margin-right: 20px;
+}
+
 .links ul {
     list-style: none;
     margin: 0;
@@ -87,6 +91,8 @@ body {
     border-radius: 8px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease;
+    max-width: 200px; /* Adjust as needed */
+    max-height: 150px; /* Adjust as needed */
 }
 
 .images img:hover {
@@ -95,7 +101,15 @@ body {
 }
 
 /* Call-to-Action Buttons */
-.button, .email-button {
+.call-to-action .container {
+    display: flex;
+    justify-content: center; /* Center the buttons */
+    align-items: center;
+    flex-direction: column;
+}
+
+.button,
+.email-button {
     background-color: #90EE90;
     border: none;
     color: black;
@@ -106,9 +120,11 @@ body {
     font-size: 16px;
     transition: background-color 0.3s ease, transform 0.3s ease;
     cursor: pointer;
+    margin: 10px; /* Add some margin between buttons */
 }
 
-.button:hover, .email-button:hover {
+.button:hover,
+.email-button:hover {
     background-color: #d51633;
     transform: scale(1.05);
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
@@ -116,11 +132,26 @@ body {
 }
 
 /* Video Section */
-#video {
+.main-content {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 40px;
+    align-items: flex-start; /* Align items to the start */
+}
+
+#video {
+    flex: 1; /* Take up remaining space */
+    padding: 20px;
+}
+
+/* More About Section */
+#more-about {
+    width: 300px;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    flex: 1; /* Take up remaining space */
 }
 
 /* Contact Form */
@@ -131,7 +162,8 @@ body {
     padding: 20px;
 }
 
-#contact-form input[type="email"], #contact-form input[type="submit"] {
+#contact-form input[type="email"],
+#contact-form input[type="submit"] {
     width: 50%;
     padding: 10px;
     margin-bottom: 10px;
@@ -156,18 +188,6 @@ footer {
     width: 100%;
 }
 
-/* More About Section */
-#more-about {
-    width: 300px;
-    padding: 20px;
-    margin: 20px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-    float: right;
-    text-align: center;
-}
-
 /* Media Query for Smaller Screens */
 @media (max-width: 768px) {
     .images {
@@ -178,5 +198,14 @@ footer {
     .images img {
         width: calc(100% - 40px);
         margin: 20px 0;
+    }
+
+    .main-content {
+        flex-direction: column;
+    }
+
+    #more-about {
+        float: none;
+        width: 100%;
     }
 }
