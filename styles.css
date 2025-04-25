@@ -42,8 +42,10 @@ body {
 }
 
 .size {
-    width: 100px; /* Reduced logo size */
-    height: auto;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 /* Navigation Links */
