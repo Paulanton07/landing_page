@@ -1,3 +1,7 @@
+<img class="size" src="logo.png" alt="Woodworx Logo" id="header-img">
+
+
+
 this is a review to correct page structure and placement of elements.
 
 1. the Page1, Page2, Page3 links should be renamed to reflect the name of connected element.

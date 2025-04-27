@@ -4,11 +4,7 @@ body {
     font-family: Arial, sans-serif;
 }
 
-/* Reusable Flexbox Class */
-.flex-center {
-    display: flex;
-    align-items: center;
-}
+
 
 /* Header */
 #header {
@@ -28,12 +24,13 @@ body {
 #header .header-content {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    width: 200px; /* added to contain the logo */
+    justify-content: flex-start;
+    
 }
 
 #header .header-title {
-    text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 #header .header-subtitle {
@@ -43,10 +40,9 @@ body {
 
 .size {
     display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 70px;
-  width: auto;
+    align-items: left;
+    height: 120px;
+    width: auto;
 }
 
 /* Navigation Links */
